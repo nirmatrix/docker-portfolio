@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Pasindu Nirman</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/projects.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">PN<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-dot"></div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="orb orb-1"></div>
+      <div class="eyebrow fade-up fade-up-1">My work</div>
+      <h1 class="section-title fade-up fade-up-2">Things I've <span>built</span></h1>
+      <p class="page-sub fade-up fade-up-3">
+        A collection of projects built out of curiosity, necessity, and a desire
+        to understand how things work under the hood.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+
+      <!-- PROJECT 1 — Linux health monitor -->
+      <div class="project-full card fade-up fade-up-1">
+        <div class="project-full-layout">
+
+          <!-- Info side -->
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <h2 class="project-title">Linux Server Health Monitor</h2>
+            <p class="project-desc">
+              A Bash + Python tool that continuously monitors a Linux server's
+              vital signs — CPU usage, memory consumption, disk space, and
+              running processes. When any metric crosses a defined threshold,
+              it logs the event and triggers an alert so you catch problems
+              before they become outages.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Real-time CPU, memory &amp; disk monitoring</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Configurable alert thresholds</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Automated logging with timestamps</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Runs as a cron job — fully automated</span>
+              </div>
+            </div>
+
+            <div class="project-tech">
+              <span class="tag accent">Bash</span>
+              <span class="tag accent">Python</span>
+              <span class="tag">cron</span>
+              <span class="tag">Linux</span>
+              <span class="tag">syslog</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/nirmatrix/linux-server-monitor" target="_blank" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub repo
+              </a>
+              <a href="#" class="btn btn-ghost">Live demo</a>
+            </div>
+          </div>
+
+          <!-- Terminal preview -->
+          <div class="project-preview">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                <span class="title">health-monitor.sh</span>
+              </div>
+              <div class="terminal-body">
+                <div class="dim"># Linux Server Health Monitor v1.0</div>
+                <div style="margin-top:8px"><span class="prompt">$</span> <span class="cmd">./health-monitor.sh</span></div>
+                <div class="out">Checking system health...</div>
+                <div style="margin-top:8px">
+                  <span class="out">CPU Usage    : </span><span class="hl">23%</span>
+                  <span class="dim"> [OK]</span>
+                </div>
+                <div>
+                  <span class="out">Memory Usage : </span><span class="hl">67%</span>
+                  <span class="dim"> [OK]</span>
+                </div>
+                <div>
+                  <span class="out">Disk /       : </span><span style="color:var(--amber)">84%</span>
+                  <span style="color:var(--amber)"> [WARNING]</span>
+                </div>
+                <div>
+                  <span class="out">Disk /home   : </span><span class="hl">41%</span>
+                  <span class="dim"> [OK]</span>
+                </div>
+                <div style="margin-top:8px"><span class="out">Load Avg     : </span><span class="hl">0.42 0.38 0.35</span></div>
+                <div style="margin-top:8px" class="dim">── Alert log ─────────────────</div>
+                <div style="color:var(--amber)">[2025-04-12 14:23:01] WARN: Disk / at 84%</div>
+                <div class="dim">[2025-04-12 14:20:00] INFO: All systems nominal</div>
+                <div style="margin-top:8px"><span class="prompt">$</span> <span class="cursor"></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PROJECT 2 — Portfolio -->
+      <div class="project-full card fade-up fade-up-2">
+        <div class="project-full-layout reverse">
+
+          <!-- Info side -->
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <h2 class="project-title">This Portfolio Website</h2>
+            <p class="project-desc">
+              A dark, terminal-inspired personal portfolio built from scratch
+              using pure HTML, CSS, and vanilla JavaScript. No frameworks,
+              no build tools — just clean code with a focus on atmosphere,
+              typography, and performance.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot" style="background:var(--accent2)"></span>
+                <span>4-page structure: Home, About, Projects, Contact</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot" style="background:var(--accent2)"></span>
+                <span>Terminal aesthetic with grid overlay &amp; scan effects</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot" style="background:var(--accent2)"></span>
+                <span>Fully responsive — mobile to desktop</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot" style="background:var(--accent2)"></span>
+                <span>Zero dependencies, fast loading</span>
+              </div>
+            </div>
+
+            <div class="project-tech">
+              <span class="tag purple">HTML5</span>
+              <span class="tag purple">CSS3</span>
+              <span class="tag purple">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/nirmatrix" target="_blank" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub repo
+              </a>
+              <a href="index.html" class="btn btn-ghost">You're looking at it</a>
+            </div>
+          </div>
+
+          <!-- Site preview card -->
+          <div class="project-preview">
+            <div class="site-preview card">
+              <div class="sp-bar">
+                <div class="sp-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="sp-url">pasindu.dev</div>
+              </div>
+              <div class="sp-content">
+                <div class="sp-nav"></div>
+                <div class="sp-hero">
+                  <div class="sp-name-block">
+                    <div class="sp-name"></div>
+                    <div class="sp-name short"></div>
+                  </div>
+                  <div class="sp-terminal-mini">
+                    <div class="sp-line"></div>
+                    <div class="sp-line short"></div>
+                    <div class="sp-line"></div>
+                    <div class="sp-line short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2025 Pasindu Nirman</span>
+    <span>MIS Undergraduate · DevOps Enthusiast</span>
+    <a href="contact.html">Let's connect →</a>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

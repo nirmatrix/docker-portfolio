@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Pasindu Nirman</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">PN<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-dot"></div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="orb orb-1"></div>
+      <div class="eyebrow fade-up fade-up-1">Get in touch</div>
+      <h1 class="section-title fade-up fade-up-2">
+        Let's <span>connect</span>
+      </h1>
+      <p class="page-sub fade-up fade-up-3">
+        Whether it's about an internship, a project, or just to talk Linux —
+        my inbox is open. I'll reply as soon as I'm back from the terminal.
+      </p>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section class="contact-section">
+      <div class="contact-grid">
+
+        <!-- Left: Links -->
+        <div class="contact-links fade-up fade-up-1">
+
+          <div class="terminal" style="margin-bottom:28px">
+            <div class="terminal-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="title">contact.json</span>
+            </div>
+            <div class="terminal-body">
+              <div class="dim">{</div>
+              <div style="padding-left:16px">
+                <span class="out">"name"</span><span class="dim">: </span><span class="hl">"Pasindu Nirman"</span><span class="dim">,</span>
+              </div>
+              <div style="padding-left:16px">
+                <span class="out">"role"</span><span class="dim">: </span><span class="hl">"MIS Undergraduate"</span><span class="dim">,</span>
+              </div>
+              <div style="padding-left:16px">
+                <span class="out">"email"</span><span class="dim">: </span>
+                <span class="hl" id="email-display">"pasidunirman2003@gmail.com"</span><span class="dim">,</span>
+              </div>
+              <div style="padding-left:16px">
+                <span class="out">"linkedin"</span><span class="dim">: </span>
+                <span class="hl" id="linkedin-display">"linkedin.com/in/pasindu-nirmaan-72a823347/"</span><span class="dim">,</span>
+              </div>
+              <div style="padding-left:16px">
+                <span class="out">"github"</span><span class="dim">: </span>
+                <span class="hl" id="github-display">"github.com/nirmatrix"</span><span class="dim">,</span>
+              </div>
+              <div style="padding-left:16px">
+                <span class="out">"status"</span><span class="dim">: </span>
+                <span style="color:var(--accent3)">"open_to_internships"</span>
+              </div>
+              <div class="dim">}</div>
+            </div>
+          </div>
+
+          <!-- Contact cards -->
+          <div class="contact-cards">
+
+            <a href="mailto:pasidunirman2003@gmail.com" class="contact-card card" id="email-card">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div class="cc-info">
+                <div class="cc-label">Email</div>
+                <div class="cc-value" id="email-val">pasidunirman2003@gmail.com</div>
+              </div>
+              <div class="cc-arrow">→</div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pasindu-nirmaan-72a823347/" target="_blank" class="contact-card card" id="linkedin-card">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div class="cc-info">
+                <div class="cc-label">LinkedIn</div>
+                <div class="cc-value" id="linkedin-val">linkedin.com/in/pasindu-nirmaan-72a823347/</div>
+              </div>
+              <div class="cc-arrow">→</div>
+            </a>
+
+            <a href="https://github.com/nirmatrix" target="_blank" class="contact-card card" id="github-card">
+              <div class="cc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </div>
+              <div class="cc-info">
+                <div class="cc-label">GitHub</div>
+                <div class="cc-value" id="github-val">github.com/nirmatrix</div>
+              </div>
+              <div class="cc-arrow">→</div>
+            </a>
+
+          </div>
+
+          <!-- Availability note -->
+          <div class="avail-note card">
+            <div class="avail-dot"></div>
+            <div>
+              <div class="avail-title">Open to internships</div>
+              <div class="avail-desc">
+                Currently looking for DevOps / sysadmin / MIS-related internship
+                opportunities. Feel free to reach out!
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Quick message form -->
+        <div class="contact-form-wrap fade-up fade-up-2">
+          <div class="card">
+            <div class="form-header">
+              <div class="eyebrow" style="margin-bottom:8px">Send a message</div>
+              <p style="font-size:0.8rem; color:var(--text3)">
+                Fill this in and I'll get back to you.
+              </p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" placeholder="Your name" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="your@email.com" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-input" placeholder="Internship inquiry / Project collab / ..."/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-input form-textarea" placeholder="Hey Pasindu, I wanted to reach out about..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">
+                <span>&#x2192;</span> Send message
+              </button>
+            </form>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon">✓</div>
+              <div class="success-title">Message sent!</div>
+              <div class="success-desc">Thanks — I'll get back to you soon.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2025 Pasindu Nirman</span>
+    <span>MIS Undergraduate · DevOps Enthusiast</span>
+    <a href="mailto:pasidunirman2003@gmail.com">Email me →</a>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    // Form submit demo
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('form-success').style.display = 'flex';
+    });
+  </script>
+</body>
+</html>

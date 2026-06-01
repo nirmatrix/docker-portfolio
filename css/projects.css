@@ -1,0 +1,148 @@
+/* ── Page Header ──────────────────────────────────── */
+.page-header {
+  position: relative;
+  padding: 80px 40px 0;
+  max-width: 1100px; margin: 0 auto;
+  overflow: hidden;
+}
+.page-header .orb-1 {
+  position: absolute;
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(123,97,255,0.07) 0%, transparent 70%);
+  top: -60px; right: 0;
+  border-radius: 50%; filter: blur(60px); pointer-events: none;
+}
+.page-sub {
+  font-size: 0.88rem; color: var(--text2);
+  max-width: 520px; line-height: 1.8;
+  margin-top: -32px; margin-bottom: 0;
+}
+
+/* ── Projects Section ─────────────────────────────── */
+.projects-section {
+  padding: 60px 40px 100px;
+  max-width: 1100px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 32px;
+}
+
+/* Full-width project card */
+.project-full { position: relative; overflow: hidden; }
+.project-full::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--accent);
+  border-radius: 3px 0 0 3px;
+}
+.project-full:nth-child(2)::before { background: var(--accent2); }
+
+.project-full-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.project-full-layout.reverse { direction: rtl; }
+.project-full-layout.reverse > * { direction: ltr; }
+
+/* Project number */
+.project-number {
+  font-family: var(--font-display);
+  font-size: 4rem; font-weight: 800;
+  color: var(--border2);
+  line-height: 1;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem; font-weight: 800;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.project-desc {
+  font-size: 0.84rem; color: var(--text2); line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* Highlights */
+.project-highlights {
+  display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: 24px;
+}
+.highlight-item {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.82rem; color: var(--text2);
+}
+.hl-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0;
+}
+
+.project-tech {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.project-links { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Preview area */
+.project-preview { width: 100%; }
+
+/* Site preview mockup */
+.site-preview {
+  overflow: hidden;
+  padding: 0;
+}
+.sp-bar {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+}
+.sp-dots { display: flex; gap: 6px; }
+.sp-dots span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--border2);
+}
+.sp-dots span:nth-child(1) { background: var(--red); }
+.sp-dots span:nth-child(2) { background: var(--amber); }
+.sp-dots span:nth-child(3) { background: var(--accent3); }
+.sp-url {
+  flex: 1; text-align: center;
+  font-size: 0.7rem; color: var(--text3);
+  font-family: var(--font-mono);
+}
+.sp-content { padding: 16px; }
+.sp-nav {
+  height: 8px; background: var(--border); border-radius: 4px; margin-bottom: 16px;
+}
+.sp-hero {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+.sp-name-block { display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+.sp-name { height: 18px; background: linear-gradient(90deg, rgba(0,229,255,0.3), rgba(0,229,255,0.1)); border-radius: 3px; }
+.sp-name.short { width: 65%; }
+.sp-terminal-mini {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.sp-line { height: 6px; background: var(--border2); border-radius: 3px; }
+.sp-line.short { width: 60%; }
+
+/* ── Mobile ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .project-full-layout,
+  .project-full-layout.reverse { grid-template-columns: 1fr; direction: ltr; gap: 28px; }
+  .project-preview { order: -1; }
+}
+@media (max-width: 480px) {
+  .projects-section, .page-header { padding-left: 20px; padding-right: 20px; }
+  .project-number { font-size: 2.5rem; }
+}
