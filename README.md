@@ -55,7 +55,7 @@ The CI/CD pipeline automatically builds and publishes a Docker image whenever ch
 ├── Dockerfile
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yml
+│       └── ci-main.yml
 └── README.md
 ```
 
@@ -138,7 +138,7 @@ The following GitHub repository secrets are required:
 | Secret          | Description		          |
 |-----------------|-------------------------|
 | DOCKER_USERNAME | Docker Hub username     |
-| DOCKER_PASSWORD | Docker Hub access token |
+| DOCKER_TOKEN    | Docker Hub access token |
 
 ---
 
