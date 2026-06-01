@@ -66,7 +66,7 @@ The CI/CD pipeline automatically builds and publishes a Docker image whenever ch
 ### Build the Docker Image
 
 ```bash
-docker build -t portfolio-app .
+docker build -t  portfolio:v1 .
 ```
 
 ### Run the Container
@@ -135,7 +135,7 @@ It automates the Docker image build and publishing process, enabling continuous 
 
 The following GitHub repository secrets are required:
 
-| Secret          | Description		    |
+| Secret          | Description		          |
 |-----------------|-------------------------|
 | DOCKER_USERNAME | Docker Hub username     |
 | DOCKER_PASSWORD | Docker Hub access token |
